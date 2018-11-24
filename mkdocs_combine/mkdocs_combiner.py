@@ -117,7 +117,7 @@ class MkDocsCombiner:
                 flattened.append(
                     {
                         u'file' : page,
-                        u'title': u'%s {: .page-title}' % mkdocs.utils.filename_to_title(page),
+                        u'title': u'%s {: .page-title}' % mkdocs.utils.dirname_to_title(page),
                         u'level': level,
                     })
             if type(page) is list:
